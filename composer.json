@@ -21,7 +21,8 @@
   ],
   "require": {
     "yiisoft/yii2": "~2.0.0",
-    "imagine/imagine": "v0.5.0"
+    "yiisoft/yii2-imagine": "^2.0",
+    "php": ">=5.3.2"
   },
   "autoload": {
     "psr-4": {
