@@ -1,6 +1,6 @@
 <?php
 
-namespace app\components\imageManager\models;
+namespace yii\itanium\imageManager\models;
 
 use Yii;
 use Imagine\Gd\Imagine;

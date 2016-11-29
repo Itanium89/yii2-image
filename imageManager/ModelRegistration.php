@@ -6,7 +6,7 @@
  * Time: 20:46
  */
 
-namespace app\components\imageManager;
+namespace yii\itanium\imageManager;
 
 
 class ModelRegistration

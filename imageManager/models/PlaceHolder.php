@@ -1,5 +1,5 @@
 <?php
-namespace app\components\imageManager\models;
+namespace yii\itanium\imageManager\models;
 
 use Imagine\Gd\Font;
 use Imagine\Gd\Imagine;

@@ -6,10 +6,10 @@
  * Time: 20:54
  */
 
-namespace app\components\imageManager;
+namespace yii\itanium\imageManager;
 
 
-use app\components\imageManager\models\Image;
+use yii\itanium\imageManager\models\Image;
 use yii\base\Object;
 use yii\caching\Dependency;
 
