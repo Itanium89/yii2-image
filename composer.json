@@ -1,5 +1,6 @@
 {
   "name": "itanium89/yii2-image ",
+  "type": "library",
   "description": "Image module and component",
   "keywords": [
     "yii2",
@@ -28,7 +29,7 @@
   },
   "autoload": {
     "psr-4": {
-      "itanium89\\yii2-image\\": "files/"
+      "itanium//image//": ""
     }
   }
 }
