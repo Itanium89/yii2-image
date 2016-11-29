@@ -1,5 +1,5 @@
 {
-  "name": "itanium/yii2-image",
+  "name": "itanium89/yii2-image ",
   "description": "Image module and component",
   "keywords": [
     "yii2",
@@ -28,7 +28,7 @@
   },
   "autoload": {
     "psr-4": {
-      "itanium\\yii2-image\\": ""
+      "itanium89\\yii2-image\\": ""
     }
   }
 }
