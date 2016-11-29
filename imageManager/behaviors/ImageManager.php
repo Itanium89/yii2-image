@@ -6,11 +6,11 @@
  * Time: 22:05
  */
 
-namespace itanium\image\imageManager\behaviors;
+namespace itanium89\image\imageManager\behaviors;
 
 
-use itanium\image\imageManager\ImageComponent;
-use itanium\image\imageManager\ImageMagic;
+use itanium89\image\imageManager\ImageComponent;
+use itanium89\image\imageManager\ImageMagic;
 use yii\base\Behavior;
 use yii\base\InvalidConfigException;
 use yii\db\ActiveRecord;

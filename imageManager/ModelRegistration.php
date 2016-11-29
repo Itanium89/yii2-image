@@ -6,7 +6,7 @@
  * Time: 20:46
  */
 
-namespace itanium\image\imageManager;
+namespace itanium89\image\imageManager;
 
 
 class ModelRegistration

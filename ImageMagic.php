@@ -1,5 +1,5 @@
 <?php
-namespace itanium\image;
+namespace itanium89\image;
 
 
 /**
