@@ -1,7 +1,5 @@
 {
-  // название пакета
   "name": "itanium89/yii2-image",
-  // тип пакета
   "type": "yii2-extension",
   "description": "Image module and component",
   "keywords": [
@@ -21,15 +19,13 @@
       "email": "semanton89@gmail.com"
     }
   ],
-  // зависимости пакета
   "require": {
     "yiisoft/yii2": "~2.0.0",
     "imagine/imagine": "v0.5.0"
   },
-  // указание автозагрузчика классов
   "autoload": {
     "psr-4": {
-      "yii\\imagine\\": ""
+      "yii\\itanium\\": ""
     }
   }
 }
