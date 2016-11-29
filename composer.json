@@ -1,6 +1,6 @@
 {
   "name": "itanium89/yii2-image ",
-  "type": "library",
+  "type": "yii2-extension",
   "description": "Image module and component",
   "keywords": [
     "yii2",
