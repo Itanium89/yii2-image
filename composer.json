@@ -1,0 +1,35 @@
+{
+  // название пакета
+  "name": "itanium89/yii2-image",
+  // тип пакета
+  "type": "yii2-extension",
+  "description": "Image module and component",
+  "keywords": [
+    "yii2",
+    "imagine",
+    "image",
+    "helper"
+  ],
+  "license": "BSD-3-Clause",
+  "support": {
+    "issues": "https://github.com/Itanium89/yii2-image/issues",
+    "source": "https://github.com/yiisoft/yii2"
+  },
+  "authors": [
+    {
+      "name": "Anton Semeikin",
+      "email": "semanton89@gmail.com"
+    }
+  ],
+  // зависимости пакета
+  "require": {
+    "yiisoft/yii2": "~2.0.0",
+    "imagine/imagine": "v0.5.0"
+  },
+  // указание автозагрузчика классов
+  "autoload": {
+    "psr-4": {
+      "yii\\imagine\\": ""
+    }
+  }
+}
