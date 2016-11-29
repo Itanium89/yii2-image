@@ -28,7 +28,7 @@
   },
   "autoload": {
     "psr-4": {
-      "yii\\itanium\\": ""
+      "itanium\\yii2-image\\": ""
     }
   }
 }

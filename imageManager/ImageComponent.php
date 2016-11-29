@@ -6,10 +6,10 @@
  * Time: 22:42
  */
 
-namespace yii\itanium\imageManager;
+namespace itanium\image\imageManager;
 
 
-use yii\itanium\imageManager\models\Image;
+use itanium\image\imageManager\models\Image;
 use yii\base\Component;
 use Yii;
 use yii\helpers\ArrayHelper;
