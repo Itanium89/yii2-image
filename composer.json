@@ -1,6 +1,5 @@
 {
   "name": "itanium89/yii2-image",
-  "type": "yii2-extension",
   "description": "Image module and component",
   "keywords": [
     "yii2",
@@ -8,17 +7,20 @@
     "image",
     "helper"
   ],
-  "license": "BSD-3-Clause",
-  "support": {
-    "issues": "https://github.com/Itanium89/yii2-image/issues",
-    "source": "https://github.com/yiisoft/yii2"
-  },
+  "license": "MIT",
   "authors": [
     {
       "name": "Anton Semeikin",
       "email": "semanton89@gmail.com"
     }
   ],
+  "config": {
+    "bin-dir": "bin"
+  },
+  "support": {
+    "issues": "https://github.com/Itanium89/yii2-image/issues",
+    "source": "https://github.com/yiisoft/yii2"
+  },
   "require": {
     "yiisoft/yii2": "~2.0.0",
     "yiisoft/yii2-imagine": "^2.0",
