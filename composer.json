@@ -1,5 +1,6 @@
 {
   "name": "itanium89/yii2-image",
+  "type": "yii2-extension",
   "description": "Image module and component",
   "keywords": [
     "yii2",
@@ -7,7 +8,7 @@
     "image",
     "helper"
   ],
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "authors": [
     {
       "name": "Anton Semeikin",
@@ -28,7 +29,7 @@
   },
   "autoload": {
     "psr-4": {
-      "yii\\itanium\\": ""
+      "itanium89\\image\\": ""
     }
   }
 }
