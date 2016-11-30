@@ -1,11 +1,12 @@
 <?php
-namespace itanium89\image;
+namespace itanium\image;
 
 
 /**
  * Class Module
  * @package webmodulite\news
  */
+
 class ImageMagic
 {
     
