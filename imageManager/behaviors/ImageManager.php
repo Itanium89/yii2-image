@@ -6,11 +6,11 @@
  * Time: 22:05
  */
 
-namespace itanium89\image\imageManager\behaviors;
+namespace itanium\image\imageManager\behaviors;
 
 
-use itanium89\image\imageManager\ImageComponent;
-use itanium89\image\imageManager\ImageMagic;
+use itanium\image\imageManager\ImageComponent;
+use itanium\image\imageManager\ImageMagic;
 use yii\base\Behavior;
 use yii\base\InvalidConfigException;
 use yii\db\ActiveRecord;
@@ -114,7 +114,7 @@ class ImageManager extends Behavior
         $className = get_class($this->owner);
         $className = explode('\\', $className);
         $className = array_pop($className);
-        if (isset($_FILES[$className]['name'][$attribute]) && count($_FILES[$className]['name'][$attribute]) <= 1) {
+        if (isset($_FILES[$className]['name'][$attribute]) && !is_array($_FILES[$className]['name'][$attribute])) {
             return UploadedFile::getInstance($this->owner, $attribute);
         }
         return UploadedFile::getInstances($this->owner, $attribute);
