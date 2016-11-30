@@ -8,5 +8,6 @@ namespace itanium89\image;
  */
 class ImageMagic
 {
+    
 
 }
