@@ -15,6 +15,10 @@ use Yii;
 use yii\helpers\ArrayHelper;
 use yii\helpers\BaseFileHelper;
 
+/**
+ * Class ImageComponent
+ * @package itanium\image\imageManager
+ */
 class ImageComponent extends Component
 {
     public $path;
@@ -24,7 +28,9 @@ class ImageComponent extends Component
 
     public $modelRegistrationArray = [];
 
-
+    /**
+     * @inheritdoc
+     */
     public function init()
     {
         $basePath = Yii::$app->getBasePath() . DIRECTORY_SEPARATOR . $this->configPath;
@@ -34,6 +40,10 @@ class ImageComponent extends Component
         parent::init();
     }
 
+    /**
+     * @param $owner
+     * @return string
+     */
     public function getPath($owner)
     {
         $class = get_class($owner);
@@ -52,6 +62,11 @@ class ImageComponent extends Component
         return $path;
     }
 
+    /**
+     * @param $id
+     * @param $modelId
+     * @return string
+     */
     public function getPathById($id, $modelId)
     {
         $model = $this->getModelRegistrationKeyById($id);
@@ -69,6 +84,11 @@ class ImageComponent extends Component
         return $path;
     }
 
+    /**
+     * @param $id
+     * @param $modelId
+     * @return string
+     */
     public function getCachePathById($id, $modelId)
     {
         $model = $this->getModelRegistrationKeyById($id);
@@ -87,6 +107,10 @@ class ImageComponent extends Component
     }
 
 
+    /**
+     * @param $owner
+     * @return string
+     */
     public function getCachePath($owner)
     {
         $class = get_class($owner);
@@ -105,6 +129,11 @@ class ImageComponent extends Component
         return $path;
     }
 
+    /**
+     * @param $owner
+     * @param $attribute
+     * @param $name
+     */
     public function saveImage($owner, $attribute, $name)
     {
         $class = get_class($owner);
@@ -119,16 +148,28 @@ class ImageComponent extends Component
         }
     }
 
+    /**
+     * @param $class
+     * @return mixed
+     */
     public function getModelRegistrationId($class)
     {
         return ArrayHelper::getValue($this->modelRegistrationArray, $class);
     }
 
+    /**
+     * @param $id
+     * @return mixed
+     */
     public function getModelRegistrationKeyById($id)
     {
         return array_search($id, $this->modelRegistrationArray);
     }
 
+    /**
+     * @param $class
+     * @return mixed
+     */
     public function getModelRegistrationKey($class)
     {
         if (!array_key_exists($class, $this->modelRegistrationArray)) {
@@ -142,6 +183,9 @@ class ImageComponent extends Component
         return key(ArrayHelper::getColumn($this->modelRegistrationArray, $class));
     }
 
+    /**
+     *
+     */
     public function setModelRegistration()
     {
         $basePath = Yii::$app->getBasePath() . DIRECTORY_SEPARATOR . $this->configPath;
@@ -149,6 +193,9 @@ class ImageComponent extends Component
         file_put_contents($path, "<?php\n return " . var_export($this->modelRegistrationArray, true) . ';');
     }
 
+    /**
+     * @return string
+     */
     public function getPlaceHolderPath()
     {
         $path = $this->placeholderPath . DIRECTORY_SEPARATOR;

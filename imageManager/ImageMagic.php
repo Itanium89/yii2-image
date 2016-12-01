@@ -11,8 +11,11 @@ namespace itanium\image\imageManager;
 
 use itanium\image\imageManager\models\Image;
 use yii\base\Object;
-use yii\caching\Dependency;
 
+/**
+ * Class ImageMagic
+ * @package itanium\image\imageManager
+ */
 class ImageMagic extends Object
 {
     public $model;
@@ -29,7 +32,7 @@ class ImageMagic extends Object
     }
 
     /**
-     *
+     * @inheritdoc
      */
     public function init()
     {
@@ -41,7 +44,7 @@ class ImageMagic extends Object
     /**
      * @return array|\yii\db\ActiveRecord[]
      */
-    public function getImages()
+    private function getImages()
     {
         $modelRegister = \Yii::$app->imageComponent->getModelRegistrationId(get_class($this->model));
         $result = Image::getDb()->cache(function ($db) use ($modelRegister) {
@@ -53,7 +56,7 @@ class ImageMagic extends Object
                 $model->andWhere(['modelRegistrationId' => $modelRegister]);
             }
             return $model->all();
-        },6000);
+        }, 6000);
         return $result;
     }
 
